@@ -9,15 +9,29 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    enum Detail
+    {
+        case StudentName
+        case CollegeName
+        case id
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       EnumDemo()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func EnumDemo()
+    {
+        let StudentName = Detail.CollegeName
+        print(StudentName)
+        print(Detail.CollegeName.hashValue)
     }
 
 
