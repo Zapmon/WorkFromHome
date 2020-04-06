@@ -15,6 +15,7 @@
 		3DB7329D243AE8BF00CD8F19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB7329B243AE8BF00CD8F19 /* LaunchScreen.storyboard */; };
 		3DB732A8243AE8C000CD8F19 /* NSNotificationDemo_April062020Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB732A7243AE8C000CD8F19 /* NSNotificationDemo_April062020Tests.swift */; };
 		3DB732B3243AE8C000CD8F19 /* NSNotificationDemo_April062020UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB732B2243AE8C000CD8F19 /* NSNotificationDemo_April062020UITests.swift */; };
+		3DB732C1243AEE5200CD8F19 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB732C0243AEE5200CD8F19 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3DB732AE243AE8C000CD8F19 /* NSNotificationDemo_April062020UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSNotificationDemo_April062020UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB732B2243AE8C000CD8F19 /* NSNotificationDemo_April062020UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationDemo_April062020UITests.swift; sourceTree = "<group>"; };
 		3DB732B4243AE8C000CD8F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB732C0243AEE5200CD8F19 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				3DB7328F243AE8BF00CD8F19 /* AppDelegate.swift */,
-				3DB73291243AE8BF00CD8F19 /* ViewController.swift */,
 				3DB73293243AE8BF00CD8F19 /* Main.storyboard */,
+				3DB73291243AE8BF00CD8F19 /* ViewController.swift */,
 				3DB73299243AE8BF00CD8F19 /* Assets.xcassets */,
 				3DB7329B243AE8BF00CD8F19 /* LaunchScreen.storyboard */,
 				3DB7329E243AE8BF00CD8F19 /* Info.plist */,
 				3DB73296243AE8BF00CD8F19 /* NSNotificationDemo_April062020.xcdatamodeld */,
+				3DB732C0243AEE5200CD8F19 /* SecondViewController.swift */,
 			);
 			path = NSNotificationDemo_April062020;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB732C1243AEE5200CD8F19 /* SecondViewController.swift in Sources */,
 				3DB73298243AE8BF00CD8F19 /* NSNotificationDemo_April062020.xcdatamodeld in Sources */,
 				3DB73292243AE8BF00CD8F19 /* ViewController.swift in Sources */,
 				3DB73290243AE8BF00CD8F19 /* AppDelegate.swift in Sources */,
