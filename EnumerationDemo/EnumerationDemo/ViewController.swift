@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var label: UILabel!
     //Without type enumeration
     enum Detail
     {
@@ -24,11 +25,54 @@ class ViewController: UIViewController {
         case StudentName = "Mahesh Giri"
         case id = "124554"
     }
+    
+    enum collegeFunc {
+        case StudentName
+        case CollegeName
+        case id
+        
+        func description() -> String
+        {
+            switch self {
+            case .CollegeName:
+                return "KCL-IMT,Jalandhar"
+            case .StudentName:
+                return "Mahesh Giri"
+            case .id:
+                return "123"
+            }
+        }
+    }
+    
+    enum detail
+    {
+        case name(String)
+        case marks(String,String,String)
+    }
+    
+    func data()
+    {
+        let studName = detail.name("Mahesh")
+        let studMarks = detail.marks("12", "15", "16")
+        
+        switch studMarks {
+            
+        case .name(let strName):
+            label.text = strName
+            
+        case .marks(let m1, let m2, let m3):
+            label.text = "\(m1), \(m2), \(m3)"
+            
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
       // EnumDemo()
-        typeEnum()
+      //typeEnum()
+       // let college = collegeFunc.StudentName.description()
+        //label.text = college
+        data()
     }
 
 
@@ -61,7 +105,5 @@ class ViewController: UIViewController {
             print("152")
         }
     }
-
-
 }
 
