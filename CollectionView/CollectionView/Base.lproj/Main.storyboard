@@ -85,6 +85,17 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DO2-Mc-cCt">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="220"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="uVj-1X-Ri8">
+                                                            <rect key="frame" x="117" y="178" width="33" height="34"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="0.38356164383561642" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
                                             </subviews>
                                         </view>
                                         <size key="customSize" width="150" height="220"/>
@@ -93,6 +104,7 @@
                                             <outlet property="matchLabel" destination="01p-Qt-ycP" id="V9H-6n-9O2"/>
                                             <outlet property="nameLabel" destination="2t3-gJ-NSo" id="LZv-32-4TV"/>
                                             <outlet property="playerImageView" destination="sYc-kv-07q" id="iyz-9Q-Buk"/>
+                                            <outlet property="selectedItemView" destination="DO2-Mc-cCt" id="CbU-Re-LPS"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -134,4 +146,7 @@
             <point key="canvasLocation" x="-99.375" y="117.25352112676056"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="check" width="225" height="225"/>
+    </resources>
 </document>

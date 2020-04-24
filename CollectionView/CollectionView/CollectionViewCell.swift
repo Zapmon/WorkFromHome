@@ -14,4 +14,5 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var matchLabel: UILabel!
     @IBOutlet weak var highestScoreLabel: UILabel!
+    @IBOutlet weak var selectedItemView: UIView!
 }

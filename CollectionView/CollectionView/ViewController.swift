@@ -12,7 +12,7 @@ class ViewController: UIViewController, UICollectionViewDelegate,UICollectionVie
     let playerArray = [["name":"MS Dhoni","age":"48","matches":"245","highest_score":"183","image_name":"MS-Dhoni"],["name":"Virat Kohli","age":"30","matches":"145","highest_score":"103","image_name":"Virat-Kohli"],["name":"Suresh Raina","age":"40","matches":"205","highest_score":"181","image_name":"suresh-raina"],["name":"MS Dhoni","age":"48","matches":"245","highest_score":"183","image_name":"Hardik-Pandya"],["name":"MS Dhoni","age":"48","matches":"245","highest_score":"183","image_name":"rohit"],["name":"MS Dhoni","age":"48","matches":"245","highest_score":"183","image_name":"shikhar-dhawan"],["name":"MS Dhoni","age":"48","matches":"245","highest_score":"183","image_name":"bumrah"],["name":"MS Dhoni","age":"48","matches":"245","highest_score":"183","image_name":"chahal"],["name":"MS Dhoni","age":"48","matches":"245","highest_score":"183","image_name":"jadeja"],["name":"MS Dhoni","age":"48","matches":"245","highest_score":"183","image_name":"Sachin-Tendulkar"],["name":"MS Dhoni","age":"48","matches":"245","highest_score":"183","image_name":"kuldeep-yadav"]]
     
     
-    var selected_Player:[[String:String]] = []
+    var selected_Player:[Int] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -35,7 +35,30 @@ class ViewController: UIViewController, UICollectionViewDelegate,UICollectionVie
         cell.matchLabel.text = playerArray[indexPath.row]["matches"]
         cell.highestScoreLabel.text = playerArray[indexPath.row]["highest_score"]
         cell.playerImageView.image = UIImage(named: playerArray[indexPath.row]["image_name"]!)
+        
+        if selected_Player.contains(indexPath.row)
+        {
+            cell.selectedItemView.isHidden = false
+        }
+        else
+        {
+            cell.selectedItemView.isHidden = true
+        }
         return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        print(indexPath.row)
+        if self.selected_Player.contains(indexPath.row)
+        {
+            selected_Player.remove(at: selected_Player.index(of: indexPath.row)!)
+        }
+        else
+        {
+            self.selected_Player.append(indexPath.row)
+        }
+        collectionView.reloadData()
+        print(selected_Player)
     }
 
 
