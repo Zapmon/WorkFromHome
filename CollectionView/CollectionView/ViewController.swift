@@ -26,13 +26,6 @@ class ViewController: UIViewController, UICollectionViewDelegate,UICollectionVie
     @IBAction func SelectedCricketTeam(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let secondVC = storyboard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
-        for i in 0...playerArray.count
-        {
-            if (self.playerArray[i]["Selected"] as! Bool)
-            {
-                //secondVC.selectedPlayer.append(self.playerArray[i])
-            }
-        }
         
         self.present(secondVC, animated: true, completion: nil)
     }
