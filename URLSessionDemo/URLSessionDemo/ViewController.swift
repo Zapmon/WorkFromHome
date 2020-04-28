@@ -7,12 +7,14 @@
 //
 
 import UIKit
-
+import Alamofire
+import AlamofireImage 
 class ViewController: UIViewController,UITableViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Hello World!")
+        var image  = af_setImageWithURL(
     }
 
     override func didReceiveMemoryWarning() {
