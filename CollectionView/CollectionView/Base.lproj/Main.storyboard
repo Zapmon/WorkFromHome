@@ -47,7 +47,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MvC-Mt-GDK">
-                                <rect key="frame" x="0.0" y="73" width="320" height="495"/>
+                                <rect key="frame" x="0.0" y="73" width="320" height="430"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tip-Sy-tfp">
                                     <size key="itemSize" width="150" height="220"/>
@@ -136,7 +136,7 @@
                             <constraint firstItem="rSf-i0-E1V" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="54C-sT-ui3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FVq-0i-RnS" secondAttribute="bottom" id="Hdc-6N-891"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MvC-Mt-GDK" secondAttribute="trailing" id="IXK-f1-inf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MvC-Mt-GDK" secondAttribute="bottom" id="Jvp-a6-JV5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MvC-Mt-GDK" secondAttribute="bottom" constant="65" id="Jvp-a6-JV5"/>
                             <constraint firstItem="MvC-Mt-GDK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OrM-58-0Xd"/>
                             <constraint firstItem="MvC-Mt-GDK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="cHS-vp-vB1"/>
                             <constraint firstItem="FVq-0i-RnS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qb6-pD-3U3"/>
