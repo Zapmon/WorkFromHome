@@ -15,6 +15,7 @@
 		3D663D5E2463B327005B994F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D663D5C2463B327005B994F /* LaunchScreen.storyboard */; };
 		3D663D692463B327005B994F /* CoreDataDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D663D682463B327005B994F /* CoreDataDemoTests.swift */; };
 		3D663D742463B327005B994F /* CoreDataDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D663D732463B327005B994F /* CoreDataDemoUITests.swift */; };
+		3D663D872463B503005B994F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D663D862463B503005B994F /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3D663D6F2463B327005B994F /* CoreDataDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D663D732463B327005B994F /* CoreDataDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDemoUITests.swift; sourceTree = "<group>"; };
 		3D663D752463B327005B994F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D663D862463B503005B994F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D663D872463B503005B994F /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				3D663D672463B327005B994F /* CoreDataDemoTests */,
 				3D663D722463B327005B994F /* CoreDataDemoUITests */,
 				3D663D4E2463B327005B994F /* Products */,
+				3D663D852463B502005B994F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +130,14 @@
 				3D663D752463B327005B994F /* Info.plist */,
 			);
 			path = CoreDataDemoUITests;
+			sourceTree = "<group>";
+		};
+		3D663D852463B502005B994F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D663D862463B503005B994F /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
